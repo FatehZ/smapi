@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="admin-service" />
+      <module name="category-service" />
+      <module name="gateway-service" />
+      <module name="manager-service" />
+      <module name="post-service" />
+      <module name="tag-service" />
+      <module name="user-service" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="18c7a222-9203-413d-934d-2311860e7eb7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/.git">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/admin-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/category-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gateway-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/manager-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/post-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/tag-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/user-client">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/user-service">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2VhGXWDbQq0h3RhCK5shS4h0d1A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "/home/neon/Desktop/sm/k8s",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.18390805",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-service/src/main/java/com/ktxdevelopment/userservice" />
+      <recent name="$PROJECT_DIR$/gateway-service/src/main/java/com/ktxdevelopment/gatewayservice" />
+      <recent name="$PROJECT_DIR$/admin-service/src/main/java/com/ktxdevelopment/adminservice" />
+      <recent name="$PROJECT_DIR$/category-service/src/main/java/com/ktxdevelopment/categoryservice" />
+      <recent name="$PROJECT_DIR$/post-service/src/main/java/com/ktxdevelopment/postservice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin-service/src/main/java/com/ktxdevelopment/adminservice" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18c7a222-9203-413d-934d-2311860e7eb7" name="Changes" comment="" />
+      <created>1695280940250</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695280940250</updated>
+      <workItem from="1695309297121" duration="838000" />
+      <workItem from="1695316454428" duration="92000" />
+      <workItem from="1695390567850" duration="6013000" />
+      <workItem from="1695459772361" duration="3884000" />
+      <workItem from="1695529621848" duration="167000" />
+      <workItem from="1695529795891" duration="21000" />
+      <workItem from="1695625136261" duration="108000" />
+      <workItem from="1695661728648" duration="356000" />
+      <workItem from="1695702550373" duration="467000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

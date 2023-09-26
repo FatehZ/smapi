@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: postgres # has to match .spec.template.metadata.labels
+  serviceName: postgres
+  replicas: 1 # by default is 1
+  template:
+    metadata:
+      labels:
+        app: postgres # has to match .spec.selector.matchLabels
+    spec:
+      containers:
+      - name: postgres
+        image: postgres
+        imagePullPolicy: IfNotPresent
+        envFrom:
+          - configMapRef:
+              name: postgres-config
+        restart-policy: always
+        volumeMounts: 
+          - mountPath: /var/lib/postgresql/data
+            name: postgres  
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+      volumes:
+        - name: postgres
+          persistentVolumeClaim: postgres-pc-volume-claim
+
+      
+        # ports:
+        # - containerPort: 80
+          # name: postgres
+        # volumeMounts:
+        # - name: www
+          # mountPath: /usr/share/nginx/html
+  # volumeClaimTemplates:
+  # - metadata:
+      # name: www
+      # storageClassName: my-storage-class
+      # accessModes:
+      # - ReadWriteOnce
+      # resources:
+        # requests:
+          # storage: 1Gi
