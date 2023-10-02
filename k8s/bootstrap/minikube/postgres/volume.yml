@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: PersistentVolumeClaim
+kind: PersistentVolume
 metadata:
   name: postgres-pc-volume
   namespace: default
@@ -7,12 +7,11 @@ metadata:
     app: postgres
     type: local
 spec:
-  storageClassName: manual
+  accessModes:
+    - ReadWriteMany
   capacity:
     storage: 5Gi
-  accessModes:
-  - ReadWriteMany
-  hostPath: 
+  hostPath:
     path: /mnt/data
 ---
 apiVersion: v1
@@ -21,7 +20,7 @@ metadata:
   name: postgres-pc-volume-claim
   namespace: default
   labels:
-    app: MYAPP
+    app: sm
 spec:
   storageClassName: manual
   accessModes:

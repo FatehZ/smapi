@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: postgres
-  namespace: default
+  labels:
+    app: postgres
 spec:
   selector:
     matchLabels:
@@ -14,27 +15,29 @@ spec:
       labels:
         app: postgres # has to match .spec.selector.matchLabels
     spec:
-      containers:
-      - name: postgres
-        image: postgres
-        imagePullPolicy: IfNotPresent
-        envFrom:
-          - configMapRef:
-              name: postgres-config
-        restart-policy: always
-        volumeMounts: 
-          - mountPath: /var/lib/postgresql/data
-            name: postgres  
-        resources:
-          requests:
-            cpu: 100m
-            memory: 256Mi
-          limits:
-            cpu: 500m
-            memory: 512Mi
       volumes:
         - name: postgres
-          persistentVolumeClaim: postgres-pc-volume-claim
+          persistentVolumeClaim:
+            claimName: postgres-pc-volume-claim
+      containers:
+        - name: postgres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+#          restartPolicy: always
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+#              restart-policy: always
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgres
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
 
       
         # ports:
